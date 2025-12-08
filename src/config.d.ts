@@ -1,5 +1,7 @@
 import type { ScriptProps } from 'next/script'
 
+import type { FooterConfig } from '~/components/layout/footer/config'
+
 declare global {
   export interface AppThemeConfig {
     config: AppConfig
@@ -36,6 +38,11 @@ declare global {
   export interface OtherInfo {
     date: string
     icp?: {
+      text: string
+      link: string
+    }
+    police?: {
+      icon: string
       text: string
       link: string
     }
